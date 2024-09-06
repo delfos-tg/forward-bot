@@ -25,7 +25,6 @@
       "ulimits": []
     }
   ],
-  "executionRoleArn": "arn:aws:iam::021891591821:role/ecsTaskExecutionRole",
   "networkMode": "bridge",
   "volumes": [],
   "placementConstraints": [],
