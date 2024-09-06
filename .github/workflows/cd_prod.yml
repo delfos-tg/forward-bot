@@ -8,7 +8,7 @@ on:
 
 env:
   AWS_REGION: us-east-1 # set this to your preferred AWS region, e.g. us-west-1 a
-  ECR_REPOSITORY: forward-tg-service-api # set this to your Amazon ECR repository name
+  ECR_REPOSITORY: tg-forward # set this to your Amazon ECR repository name
   ECS_SERVICE: tg-forward-bot # set this to your Amazon ECS service name
   ECS_CLUSTER: telegram # set this to your Amazon ECS cluster name
   ECS_TASK_DEFINITION: ./.tasks/production.json # set this to the path to your Amazon ECS task definition
