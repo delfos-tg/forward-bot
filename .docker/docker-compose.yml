@@ -1,0 +1,10 @@
+name: tgBot
+
+services:
+  bot:
+    image: 'bot:${VERSION:-latest}'
+    container_name: 'bot'
+    build:
+      context: ../
+      dockerfile: .docker/Dockerfile
+    command: python main.py

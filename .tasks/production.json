@@ -1,0 +1,45 @@
+{
+  "family": "tg-forward-service-tdf",
+  "containerDefinitions": [
+    {
+      "name": "api",
+      "image": "021891591821.dkr.ecr.us-east-1.amazonaws.com/tg-forward",
+      "essential": true,
+      "cpu": 0,
+      "portMappings": [],
+      "environment": [],
+      "environmentFiles": [],
+      "mountPoints": [],
+      "volumesFrom": [],
+      "secrets": [],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-create-group": "true",
+          "awslogs-group": "/ecs/tg-forward-service-tdf",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        },
+        "secretOptions": []
+      },
+      "ulimits": []
+    }
+  ],
+  "executionRoleArn": "arn:aws:iam::900926527217:role/ecsTaskExecutionRole",
+  "networkMode": "bridge",
+  "volumes": [],
+  "placementConstraints": [],
+  "requiresCompatibilities": ["EC2"],
+  "cpu": "1024",
+  "memory": "1024",
+  "runtimePlatform": {
+    "cpuArchitecture": "X86_64",
+    "operatingSystemFamily": "LINUX"
+  },
+  "tags": [
+    {
+      "key": "Produto",
+      "value": "Telegram"
+    }
+  ]
+}
